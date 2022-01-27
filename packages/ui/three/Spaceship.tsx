@@ -8,7 +8,7 @@ type GLTFResult = GLTF & {
 		Default: THREE.Mesh
 	}
 }
-
+// 3d model source: https://codesandbox.io/s/react-three-fiber-orbit-controls-without-drei-7c11y?from-embed=&file=/src/App.js
 const Model3D = () => {
 	const model = useGLTF(
 		'https://uploads.codesandbox.io/uploads/user/c16bd0b5-fe7e-4464-bdea-b2bf766b639b/h9Gz-arwing.glb',
