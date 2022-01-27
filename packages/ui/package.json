@@ -1,0 +1,17 @@
+{
+	"name": "ui",
+	"version": "0.0.0",
+	"main": "./index.tsx",
+	"types": "./index.tsx",
+	"license": "MIT",
+	"devDependencies": {
+		"@react-three/drei": "^8.7.3",
+		"@react-three/fiber": "^7.0.25",
+		"@types/react": "^17.0.37",
+		"@types/react-dom": "^17.0.11",
+		"config": "*",
+		"tailwindcss": "^3.0.16",
+		"tsconfig": "*",
+		"typescript": "^4.5.3"
+	}
+}
