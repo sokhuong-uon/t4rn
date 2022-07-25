@@ -14,16 +14,17 @@ importers:
     specifiers:
       '@babel/core': ^7.18.9
       '@react-three/fiber': ^8.2.1
-      '@t4rn/config': workspace:*
-      '@t4rn/ui': workspace:*
+      '@t4rn/config': '*'
+      '@t4rn/ui': '*'
       '@types/node': ^18.6.1
       '@types/react': 17.0.37
-      '@types/three': ^0.136.1
+      '@types/three': ^0.142.0
       autoprefixer: ^10.4.2
       eslint: ^8.20.0
       next: 12.2.3
       next-transpile-modules: 9.0.0
       postcss: ^8.4.5
+      postprocessing: ^6.28.4
       react: 18.2.0
       react-dom: 18.2.0
       tailwindcss: ^3.0.16
@@ -33,6 +34,7 @@ importers:
       '@react-three/fiber': 8.2.1_5kidazjkmgjhxqotnaqokpbepa
       '@t4rn/ui': link:../../packages/ui
       next: 12.2.3_qugu52izettqdqqm5qcjcltcia
+      postprocessing: 6.28.4_three@0.142.0
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       three: 0.142.0
@@ -41,7 +43,7 @@ importers:
       '@t4rn/config': link:../../packages/config
       '@types/node': 18.6.1
       '@types/react': 17.0.37
-      '@types/three': 0.136.1
+      '@types/three': 0.142.0
       autoprefixer: 10.4.7_postcss@8.4.14
       eslint: 8.20.0
       next-transpile-modules: 9.0.0
@@ -68,10 +70,10 @@ importers:
       '@react-three/drei': ^9.17.3
       '@react-three/fiber': ^8.2.1
       '@react-three/postprocessing': ^2.5.4
-      '@t4rn/config': workspace:*
+      '@t4rn/config': '*'
       '@types/react': ^17.0.37
       '@types/react-dom': ^17.0.11
-      '@types/three': ^0.136.1
+      '@types/three': ^0.142.0
       react: 18.2.0
       react-dom: 18.2.0
       tailwindcss: ^3.0.16
@@ -90,7 +92,7 @@ importers:
       '@t4rn/config': link:../config
       '@types/react': 17.0.47
       '@types/react-dom': 17.0.17
-      '@types/three': 0.136.1
+      '@types/three': 0.142.0
       tailwindcss: 3.1.6
       typescript: 4.7.4
 
@@ -716,8 +718,14 @@ packages:
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
 
-  /@types/three/0.136.1:
-    resolution: {integrity: sha512-gzTw6RR4dU8sGf+RpLBWWKHRVIJ4gwKVQPk+IFCgha04Efg/itXYUalX6iBcYeSmaDu0qE5M7uTq0XLQpU4FAg==}
+  /@types/three/0.142.0:
+    resolution: {integrity: sha512-YNVnlqthfgqsxKuSNbT/G2r+ha/6x+aJm7kvjT+sxa4jUROw/KOPm5xzGj33sk1+Librg6NwH/wJ6LCDX33UZg==}
+    dependencies:
+      '@types/webxr': 0.5.0
+    dev: true
+
+  /@types/webxr/0.5.0:
+    resolution: {integrity: sha512-IUMDPSXnYIbEO2IereEFcgcqfDREOgmbGqtrMpVPpACTU6pltYLwHgVkrnYv0XhWEcjio9sYEfIEzgn3c7nDqA==}
     dev: true
 
   /@typescript-eslint/parser/5.30.7_he2ccbldppg44uulnyq4rwocfa:
@@ -2310,7 +2318,6 @@ packages:
       three: '>= 0.107.0 < 0.143.0'
     dependencies:
       three: 0.142.0
-    dev: true
 
   /potpack/1.0.2:
     resolution: {integrity: sha512-choctRBIV9EMT9WGAZHn3V7t0Z2pMQyl0EZE6pFc/6ml3ssw7Dlf/oAOvFwjm1HVsqfQN8GfeFyJ+d8tRzqueQ==}
