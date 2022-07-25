@@ -1,4 +1,4 @@
-import { Universe } from 'ui'
+import { Universe } from '@t4rn/ui'
 
 const Home = () => {
 	return (

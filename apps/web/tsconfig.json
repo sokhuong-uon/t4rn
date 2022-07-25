@@ -1,10 +1,7 @@
 {
-	"extends": "tsconfig/nextjs.json",
+	"extends": "@t4rn/config/src/typescript/nextjs.json",
 	"compilerOptions": {
-		"baseUrl": ".",
-		"paths": {
-			"@/components/*": ["components/*"]
-		}
+		"baseUrl": "."
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"],
 	"exclude": ["node_modules"]

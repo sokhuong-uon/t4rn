@@ -23,7 +23,7 @@ const Model3D = () => {
 }
 
 const Spaceship = () => {
-	const group = useRef()
+	const group = useRef<THREE.Group>(null!)
 
 	return (
 		<Suspense fallback={null}>

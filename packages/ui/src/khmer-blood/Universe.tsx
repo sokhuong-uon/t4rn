@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Stars } from '@react-three/drei'
-import { Box, Spaceship } from 'ui'
+import { Spaceship } from './Spaceship'
 
 const Universe = () => {
 	return (

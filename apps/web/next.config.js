@@ -1,4 +1,4 @@
-const withTM = require('next-transpile-modules')(['ui', '@immerse/core'])
+const withTM = require('next-transpile-modules')(['@t4rn/ui'])
 
 module.exports = withTM({
 	reactStrictMode: true,

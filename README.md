@@ -1,75 +1,22 @@
-# Turborepo starter
+# T4 R N: Turborepo, Typescript, Three.js, Tailwind CSS, React Three Fiber, Next.js
 
-This is an official Yarn v1 starter turborepo.
- fjea
-  fejaiofe
-  f
-    feajio
-## What's inside?
+## **💡 Quick Tips**
 
-This turborepo uses [Yarn](https://classic.yarnpkg.com/lang/en/) as a package manager. It includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [Next.js](https://nextjs.org) app
-- `editor`: another [Next.js](https://nextjs.org) app
-- `web`: another [Next.js](https://nextjs.org) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Jest](https://jestjs.io) test runner for all things JavaScript
-- [Prettier](https://prettier.io) for code formatting
-
-## Setup
-
-This repository is used in the `npx create-turbo` command, and selected when choosing which package manager you wish to use with your monorepo (Yarn).
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-yarn run build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-yarn run dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching (Beta)](https://turborepo.org/docs/features/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching (Beta) you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your turborepo:
-
-```
-npx turbo link
-```
-
+|Usage   | Bash Script |
+|:------|:------------|
+|__Notation__|`<dep name>` denote `string` value<br/>`[<dep name>]` denote `list of string` value __separated by space__|
+|__Install__ dependencies|`pnpm install`|
+|__Install__ dependencies for app/package|`pnpm --filter <package/app name> add <de name>`<br/>or<br/>`pnpm --filter <package/app name> add -D <de name>`<br/>or<br/>`pnpm --filter <package/app name> add -D [<de name>]`|
+|__Update__ dependencies|`pnpm --filter <package name> up <dep name>` <br/> `pnpm --filter <package name> up <dep name>@latest`|
+|__Update__ dependencies for __all__ app/packages|`pnpm up -r <dep name>` <br/> `pnpm up -r <dep name>@latest`|
+|__Build all__ apps and packages|`pnpm build`|
+|Run __dev__ server for __all__ apps|`pnpm dev`|
+|__Filter__ app/package|`pnpm --filter <app name> build`<br/>or `pnpm --filter <first app name> --filter <second app name> dev` <br/> i.e. run `pnpm --filter tour build` to build _`tour`_ app <br/> for more info, visit [pnpm](https://pnpm.io/filtering) or [turbo](https://turborepo.org/docs/core-concepts/filtering)|
+| __Remove__ node_modules and built cache| `rm -rf ./**/**/{node_modules,dist,.next,.turbo} ./node_modules`|
+|__Change/Switch__ branch| `git switch <branch name>`|
+|__Checkout__ branch or commit| `git checkout <branch-name or commit-hash>`|
+|__Delete__ local branch| `git branch -d <branch name>`|
+|__Delete__ remote branch| `git push --delete <remote branch name>` <br/>i.e. `git push origin dev --delete origin feature1`|
 ## Useful Links
 
 Learn more about the power of Turborepo:
